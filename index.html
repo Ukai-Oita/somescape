@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somescape</title>
+    <style>
+        html, body {
+            height: 100%; /* Allow body to fill window height */
+            margin: 0;    /* Remove default body margin */
+            padding: 0;
+            background-color: #000; /* Black background for area outside canvas */
+            overflow: hidden;      /* Prevent scroll bars if canvas slightly overflows */
+        }
+
+        canvas {
+            display: block; /* Default display mode */
+            /* Centering and scaling are handled by Phaser's Scale Manager */
+        }
+    </style>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+
+    <script src="scenes/GameScene.js"></script>
+    <script src="scenes/UIScene.js"></script>
+    <script src="game.js"></script>
+</head>
+<body>
+    </body>
+</html>
